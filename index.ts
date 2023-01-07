@@ -5,6 +5,8 @@ import {handleError, ValidationError} from "./utils/errors";
 
 const app = express();
 
+import { vehiclesRouter } from './routes/vehicles';
+
 app.use(cors({
     origin: 'http://localhost:3000',
 }));
@@ -17,6 +19,8 @@ app.get('/',  (req, res) => {
 app.get('/errtest', async (res, req) => {
     throw new ValidationError('Daam!');
 })
+
+app.use('/vehicles', vehiclesRouter);
 
 app.use(handleError);
 
