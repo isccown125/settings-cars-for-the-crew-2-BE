@@ -1,8 +1,9 @@
-import {Router} from 'express';
+import {Request, Response, Router} from 'express';
+import {VehicleReq, VehicleRes} from '../types';
 
 export const vehiclesRouter = Router();
 
-vehiclesRouter.post('/', (req, res)=>{
-    res.send('all vechicles');
+vehiclesRouter.get('/', (req, res:Response<string, VehicleReq>)=>{
+
 })
 
