@@ -1,7 +1,9 @@
 export type VehicleEntity = {
     id?: string,
-    brand: string,
     model: string,
+    brand_id: string,
+    country_id: string,
+    discipline_id: string,
     period: string,
     cost: number,
 }
