@@ -4,4 +4,6 @@ export * from './settings-hovercraft';
 export * from './settings-car';
 export * from './settings-boat';
 export * from './vehicle';
-
+export * from './brand';
+export * from './country';
+export * from './discipline';

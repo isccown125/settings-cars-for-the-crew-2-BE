@@ -1,7 +1,13 @@
+import {BrandEntity} from "./brand";
+import {CountryEntity} from "./country";
+import {DisciplineEntity} from "./discipline";
+
 export type VehicleEntity = {
     id?: string,
-    brand: string,
     model: string,
+    brand: BrandEntity,
+    country: CountryEntity,
+    discipline: DisciplineEntity,
     period: string,
     cost: number,
 }
